@@ -32,6 +32,6 @@ describe('Login Functionality', () => {
     })
     it('login with wrong email format credentials read data from fixture', function () {
         loginPage.login(this.data.invalid_credentials.wrong_email_format.emailId, this.data.invalid_credentials.wrong_email_format.password)
-        loginPage.validateLoginError('Invalid email addressssss.')
+        loginPage.validateLoginError('Invalid email address.')
     })
 })

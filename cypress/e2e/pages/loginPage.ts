@@ -9,7 +9,7 @@ class LoginPage {
     get alertMessage() { return cy.get('.alert-danger > ol > li') }
     
     public launchApplication() {
-        cy.visit('/')
+        cy.visit('http://automationpractice.com/index.php')
     }
 
     public login(emailId: string, password: string) {
